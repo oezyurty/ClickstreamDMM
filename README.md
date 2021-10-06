@@ -15,13 +15,13 @@ To be aligned with our AttDMM *Clickstream*DMM, you need to have the following f
 	1. timeseries_val.npy
 	1. timeseries_test.npy
 1. Time-series of log TSP (time spent on each page):
-  1. delta_time_train_log.npy
-  1. delta_time_val_log.npy
-  1. delta_time_test_log.npy
+	1. delta_time_train_log.npy
+	1. delta_time_val_log.npy
+	1. delta_time_test_log.npy
 1. Time-series of cumulative time up to the page:
-  1. cum_time_train.npy
-  1. cum_time_val.npy
-  1. cum_time_test.npy
+	1. cum_time_train.npy
+	1. cum_time_val.npy
+	1. cum_time_test.npy
 1. Static features:
 	1. static_train.npy
 	1. static_val.npy
