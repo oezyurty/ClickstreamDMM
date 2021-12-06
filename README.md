@@ -7,9 +7,9 @@ For a straight-forward use of *Clickstream*DMM, you can install the required lib
 
 ## Dataset
 
-We made our experiments on a clickstream dataset provided by our partner company. Here, we release the completely anonymized pre-processed dataset for the benchmarking, which you can find in [data](#data) folder. 
+We made our experiments on a clickstream dataset provided by our partner company. Here, we release the completely anonymized pre-processed dataset for the benchmarking, which you can find in [data](data) folder. 
 
-To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each split directory. (e.g. [splits0](#data/splits0))
+To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each split directory. (e.g. [data/splits0](data/splits0))
 1. Time-series of pages:
 	1. timeseries_train.npy
 	1. timeseries_val.npy
