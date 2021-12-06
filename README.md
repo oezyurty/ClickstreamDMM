@@ -9,7 +9,7 @@ For a straight-forward use of *Clickstream*DMM, you can install the required lib
 
 We made our experiments on a clickstream dataset provided by our partner company. We cannot release the dataset, however, we suggest having the following files for a straight-forward usage of our algorithm.
 
-To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each fold directory.
+To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each split directory.
 1. Time-series of pages:
 	1. timeseries_train.npy
 	1. timeseries_val.npy
