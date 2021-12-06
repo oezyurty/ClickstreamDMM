@@ -1027,7 +1027,7 @@ if __name__ == '__main__':
     parser.add_argument('-smod', '--save_model', type=str, default='model')
     parser.add_argument('-l', '--log', type=str, default='dmm.log')
     parser.add_argument('-efreq', '--eval_freq', type=int, default=20)
-    parser.add_argument('--data_folder', type=str, default='/local/home/user/Data_Clickstream/fold0')
+    parser.add_argument('--data_folder', type=str, default='./data/splits0')
     parser.add_argument('--eval_mode', action='store_true')
     parser.add_argument('-nse', '--num_samples_eval', type=int, default=1)
     parser.add_argument('--cuda', action='store_true')

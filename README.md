@@ -7,9 +7,9 @@ For a straight-forward use of *Clickstream*DMM, you can install the required lib
 
 ## Dataset
 
-We made our experiments on a clickstream dataset provided by our partner company. We cannot release the dataset, however, we suggest having the following files for a straight-forward usage of our algorithm.
+We made our experiments on a clickstream dataset provided by our partner company. Here, we release the completely anonymized pre-processed dataset for the benchmarking, which you can find in [data](#data) folder. 
 
-To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each split directory.
+To be aligned with our AttDMM *Clickstream*DMM, you need to have the following files under each split directory. (e.g. [splits0](#data/splits0))
 1. Time-series of pages:
 	1. timeseries_train.npy
 	1. timeseries_val.npy
@@ -34,12 +34,12 @@ To be aligned with our AttDMM *Clickstream*DMM, you need to have the following f
 ## Example Usage
 
 For training:
-`python main.py --cuda --experiments_main_folder experiments --experiment_folder default --log clickstreamdmm.log --save_model model --save_opt opt --checkpoint_freq 10 --eval_freq 10 --data_folder /home/Data/fold0`
+`python main.py --cuda --experiments_main_folder experiments --experiment_folder default --log clickstreamdmm.log --save_model model --save_opt opt --checkpoint_freq 10 --eval_freq 10 --data_folder ./data/splits0`
 
 All the log files and the model checkpoints will be saved under *current_dir/experiments_main_folder/experiment_folder/*
 
 for testing:
-`python main.py --cuda --experiments_main_folder experiments --experiment_folder default --log clickstreamdmm_eval.log --load_model model_best --load_opt opt_best --eval_mode --data_folder /home/Data/fold0`
+`python main.py --cuda --experiments_main_folder experiments --experiment_folder default --log clickstreamdmm_eval.log --load_model model_best --load_opt opt_best --eval_mode --data_folder ./data/splits0`
 
 Note that *experiments_main_folder* and *experiment_folder* have to be consistent with training so that the correct model is loaded properly.  After testing is done, the prediction outputs can be found as *current_dir/experiments_main_folder/experiment_folder/purchase_predictions_test.csv*
 
