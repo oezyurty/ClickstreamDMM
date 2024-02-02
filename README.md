@@ -1,4 +1,16 @@
-# ClickstreamDMM
+# ClickstreamDMM: A deep Markov model for clickstream analytics in online shopping
+
+The original implementation of the paper. You can cite the paper as below. 
+
+```
+@inproceedings{ozyurt2022deep,
+  title={A deep Markov model for clickstream analytics in online shopping},
+  author={Ozyurt, Yilmazcan and Hatt, Tobias and Zhang, Ce and Feuerriegel, Stefan},
+  booktitle={Proceedings of the ACM Web Conference 2022},
+  pages={3071--3081},
+  year={2022}
+}
+```
 
 ## Dependencies 
 
